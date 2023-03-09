@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Merriweather:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 15px 50px;
+  background: transparent;
+  border: black 3px solid;
+  transition: 0.3s;
+}
+button:hover {
+  background: rgb(0, 153, 255);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  background: url(./assets/images/bg.jpg) fixed center/cover;
+}
+
+header {
+  min-height: 100vh;
+}
+header .header .titre {
+  width: 75%;
+  margin: 0 auto;
+}
+header .header .titre h1 {
+  font-size: 5rem;
+  letter-spacing: 2px;
+  color: white;
+  margin: 300px 0 50px 0;
+}
+header .header .titre p {
+  font-family: "Merriweather", serif;
+  color: white;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+header .header .titre button {
+  padding: 15px 20px;
+  margin: 100px 0;
+  font-size: 2rem;
+  color: white;
+  border: white solid 4px;
+  border-radius: 200px;
+}
+header .nav {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.164);
+}
+header .nav .reseau {
+  width: 30%;
+  margin: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav .reseau i {
+  color: white;
+  font-size: 1.8rem;
+}
+header .nav nav {
+  width: 45%;
+}
+header .nav nav:hover li:not(:hover) {
+  background: none;
+  color: white;
+}
+header .nav nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header .nav nav ul li {
+  letter-spacing: 2px;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  padding: 30px 10px;
+}
+header .nav nav ul :first-child {
+  background: white;
+  color: black;
+}
+header .nav nav ul :hover {
+  background: white;
+  color: black;
+}/*# sourceMappingURL=style.css.map */
