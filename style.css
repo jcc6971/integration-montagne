@@ -19,11 +19,6 @@ button {
 button:hover {
   background: rgb(0, 153, 255);
 }
-@media screen and (max-width: 500px) {
-  button {
-    font-size: 0.6rem;
-  }
-}
 
 h1,
 h2,
@@ -41,156 +36,60 @@ body {
 }
 
 header {
-  min-height: 60vh;
-}
-header .header .titre {
-  width: 75%;
+  min-height: 80vh;
   margin: 0 auto;
-}
-header .header .titre h1 {
-  font-size: 5rem;
-  letter-spacing: 2px;
-  color: white;
-  margin: 300px 0 50px 0;
-}
-@media screen and (max-width: 970px) {
-  header .header .titre h1 {
-    font-size: 4rem;
-  }
-}
-@media screen and (max-width: 770px) {
-  header .header .titre h1 {
-    font-size: 1.3rem;
-    margin: 100px 0 50px 0;
-  }
-}
-header .header .titre p {
-  font-family: "Merriweather", serif;
-  color: white;
-  font-size: 1.5rem;
-  font-style: italic;
-}
-@media screen and (max-width: 770px) {
-  header .header .titre p {
-    font-size: 1.2rem;
-  }
-}
-header .header .titre button {
-  padding: 15px 20px;
-  margin: 100px 0;
-  font-size: 2rem;
-  color: white;
-  border: white solid 4px;
-  border-radius: 200px;
-}
-@media screen and (max-width: 500px) {
-  header .header .titre button {
-    font-size: 1rem;
-    margin: 50px 0;
-  }
-}
-header .nav {
-  margin: 0 auto;
-  width: 70%;
+  width: 80%;
   display: flex;
-  justify-content: space-between;
-  background: rgba(255, 255, 255, 0.377);
-}
-header .nav nav {
-  width: 45%;
-}
-header .nav nav:hover li:not(:hover) {
-  background: none;
-  color: white;
-}
-header .nav nav ul {
-  display: flex;
-  justify-content: space-between;
-}
-header .nav nav ul li {
-  letter-spacing: 2px;
-  font-family: "Inter", sans-serif;
-  text-transform: uppercase;
-  color: white;
-  padding: 30px 10px;
-}
-@media screen and (max-width: 760px) {
-  header .nav nav ul {
-    font-size: 0.9rem;
-  }
-}
-header .nav nav ul :first-child {
-  background: white;
-  color: black;
-}
-header .nav nav ul :hover {
-  background: white;
-  color: black;
-}
-@media screen and (max-width: 900px) {
-  header .reseau {
-    display: none;
-  }
-  header .nav nav {
-    width: 100%;
-  }
-}
-
-.reseau {
-  width: 30%;
-  margin: 0 30px;
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   color: white;
-  font-size: 1.8rem;
+}
+header .titre {
+  min-height: 40vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+header .titre h1 {
+  font-size: 4rem;
+}
+header .titre p {
+  font-family: "Merriweather", serif;
+}
+header .titre button {
+  color: white;
+  font-size: 3rem;
+  border: white 1px solid;
+  padding: 0 5px;
+  border-radius: 200px;
+}
+@media screen and (max-width: 700px) {
+  header .titre {
+    min-height: 30vh;
+  }
+  header .titre h1 {
+    font-size: 1.8rem;
+  }
+  header .titre p {
+    font-size: 0.8rem;
+  }
+  header .titre button {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  header {
+    min-height: 40vh;
+  }
 }
 
 main {
-  background: rgba(255, 255, 255, 0.938);
-  width: 70%;
+  background: rgba(255, 255, 255, 0.411);
   margin: 0 auto;
+  width: 70%;
 }
-
-.mass {
-  min-height: 500px;
-}
-.mass img {
-  width: 80%;
-}
-
-.date {
-  font-size: 1.5rem;
-  padding: 50px 0;
-  position: relative;
-}
-@media screen and (max-width: 500px) {
-  .date {
-    font-size: 1rem;
-  }
-}
-.date::before, .date::after {
-  content: "";
-  display: inline-block;
-  border: 1px #c3c3c3 solid;
-  width: 30%;
-  position: absolute;
-}
-@media screen and (max-width: 1100px) {
-  .date::before, .date::after {
-    width: 28%;
-  }
-}
-@media screen and (max-width: 940px) {
-  .date::before, .date::after {
-    width: 15%;
-  }
-}
-.date::before {
-  top: 50%;
-  left: 10%;
-}
-.date::after {
-  bottom: 50%;
-  right: 10%;
+main img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
