@@ -19,12 +19,22 @@ button {
 button:hover {
   background: rgb(0, 153, 255);
 }
+@media screen and (max-width: 800px) {
+  button {
+    font-size: 0.5rem;
+    padding: 5px 15px;
+  }
+}
 
 h1,
 h2,
 h3 {
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
+}
+
+p {
+  font-family: "Merriweather", serif;
 }
 
 ul li {
@@ -81,7 +91,7 @@ header .titre button {
 }
 @media screen and (max-width: 700px) {
   header {
-    min-height: 40vh;
+    min-height: 30vh;
   }
 }
 
@@ -143,6 +153,91 @@ main {
   margin: 0 auto;
   width: 70%;
 }
+main .date1 {
+  position: relative;
+  padding: 40px 0;
+}
+main .date1 span {
+  font-family: "Merriweather", serif;
+}
+@media screen and (max-width: 750px) {
+  main .date1 span {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  main .date1 span {
+    font-size: 0.7rem;
+  }
+}
+main .date1 span::before, main .date1 span::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 30%;
+  border: 1px rgb(206, 204, 204) solid;
+  top: 50px;
+}
+main .date1 span::before {
+  left: 10%;
+}
+main .date1 span::after {
+  right: 10%;
+}
+@media screen and (max-width: 1200px) {
+  main .date1 span::before, main .date1 span::after {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 900px) {
+  main .date1 span::before, main .date1 span::after {
+    width: 18%;
+  }
+}
+main .massive {
+  min-height: 130vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+main .massive .andthis {
+  width: 60%;
+  margin: 0 auto;
+}
+main .massive .andthis h2 {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+}
+main .massive .andthis p {
+  line-height: 40px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 1780px) {
+  main .massive .andthis {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 770px) {
+  main .massive .andthis h2 {
+    font-size: 1rem;
+  }
+  main .massive .andthis p {
+    font-size: 0.5rem;
+    line-height: normal;
+  }
+}
+@media screen and (max-width: 800px) {
+  main .massive {
+    min-height: 50vh;
+  }
+}
 main img {
   width: 100%;
+}
+main .photos {
+  height: 50vh;
 }/*# sourceMappingURL=style.css.map */

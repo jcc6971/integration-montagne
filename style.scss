@@ -18,12 +18,19 @@ button {
   &:hover {
     background: rgb(0, 153, 255);
   }
+  @media screen and (max-width: 800px) {
+    font-size: 0.5rem;
+    padding: 5px 15px;
+  }
 }
 h1,
 h2,
 h3 {
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
+}
+p {
+  font-family: "Merriweather", serif;
 }
 ul li {
   list-style: none;
@@ -73,7 +80,7 @@ header {
     }
   }
   @media screen and (max-width: 700px) {
-    min-height: 40vh;
+    min-height: 30vh;
   }
 }
 nav {
@@ -135,7 +142,88 @@ main {
   background: rgb(255, 255, 255);
   margin: 0 auto;
   width: 70%;
+  .date1 {
+    position: relative;
+    padding: 40px 0;
+    span {
+      font-family: "Merriweather", serif;
+      @media screen and (max-width: 750px) {
+        font-size: 0.9rem;
+      }
+      @media screen and (max-width: 550px) {
+        font-size: 0.7rem;
+      }
+      &::before,
+      &::after {
+        position: absolute;
+        display: inline-block;
+        content: "";
+        width: 30%;
+        border: 1px rgb(206, 204, 204) solid;
+        top: 50px;
+      }
+      &::before {
+        left: 10%;
+      }
+      &::after {
+        right: 10%;
+      }
+      @media screen and (max-width: 1200px) {
+        &::before,
+        &::after {
+          width: 25%;
+        }
+      }
+      @media screen and (max-width: 900px) {
+        &::before,
+        &::after {
+          width: 18%;
+        }
+      }
+    }
+  }
+  .massive {
+    min-height: 130vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    .andthis {
+      width: 60%;
+      margin: 0 auto;
+      h2 {
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+      }
+      p {
+        line-height: 40px;
+        margin-top: 20px;
+      }
+      @media screen and (max-width: 1780px) {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 770px) {
+        h2 {
+          font-size: 1rem;
+        }
+        p {
+          font-size: 0.5rem;
+          line-height: normal;
+        }
+      }
+    }
+    @media screen and (max-width: 800px) {
+      min-height: 50vh;
+    }
+  }
   img {
     width: 100%;
+  }
+  .photos {
+    height: 50vh;
   }
 }
