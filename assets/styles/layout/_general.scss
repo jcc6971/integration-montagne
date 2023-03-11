@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Merriweather:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+button {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 15px 50px;
+  background: transparent;
+  border: black 3px solid;
+  transition: 0.3s;
+  &:hover {
+    background: rgb(0, 153, 255);
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 0.5rem;
+    padding: 5px 15px;
+  }
+}
+h1,
+h2,
+h3 {
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+}
+p {
+  font-family: "Merriweather", serif;
+}
+ul li {
+  list-style: none;
+}
+body {
+  background: url(./assets/images/bg.jpg) fixed center/cover;
+}
