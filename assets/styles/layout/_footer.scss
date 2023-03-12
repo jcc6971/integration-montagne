@@ -1,3 +1,71 @@
 footer {
-  min-height: 80vh;
+  width: 70%;
+  margin: 10px auto;
+  background: white;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  @media screen and (max-width: 940px) {
+    display: block;
+  }
+}
+.contact-left {
+  min-height: 600px;
+  border-right: rgba(128, 128, 128, 0.281) 1px solid;
+  form {
+    font-family: "Inter", sans-serif;
+    color: grey;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    gap: 18px;
+    padding: 60px 50px;
+    textarea {
+      resize: none;
+    }
+  }
+  label {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+}
+.contact-right {
+  display: grid;
+}
+.adress,
+.phone,
+.email,
+.social {
+  h3 {
+    font-size: 0.8rem;
+  }
+  color: rgb(128, 128, 128);
+  border: 1px solid rgba(128, 128, 128, 0.281);
+  display: grid;
+  grid-template-columns: 25% 75%;
+  align-items: center;
+  line-height: 40px;
+  p,
+  .logo {
+    text-align: left;
+    font-size: 0.9rem;
+  }
+}
+.logo i {
+  color: black;
+  font-size: 1.5rem;
+  border: 1px solid rgba(128, 128, 128, 0.281);
+  border-radius: 500px;
+  padding: 20px;
+  margin: 10px;
+  @media screen and (max-width: 940px) {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+}
+.adress {
+  border-top: none;
+  @media screen and (max-width: 940px) {
+    border-top: 1px solid rgba(128, 128, 128, 0.281);
+  }
 }

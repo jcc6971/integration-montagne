@@ -21,9 +21,11 @@ header {
     }
     button {
       color: white;
+      width: 70px;
+      height: 70px;
       font-size: 3rem;
-      border: white 1px solid;
-      padding: 0 5px;
+      border: white 3px solid;
+
       border-radius: 200px;
     }
     @media screen and (max-width: 700px) {
